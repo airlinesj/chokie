@@ -1,53 +1,65 @@
 # Happy Birthday Chokie Website 🎉
 
-A beautiful, modern celebration website built with Angular featuring glass morphism design, smooth animations, and a responsive mobile-first layout.
+A beautiful, modern celebration website built with Angular featuring glass morphism design, smooth animations, and responsive mobile-first layout.
 
 ## Features ✨
 
-- **Landing Page**: Loading animation with birthday greeting
-- **Home Page**: Heartfelt friendship appreciation message
-- **Photo Gallery**: Sliding image gallery with auto-play and manual navigation
-- **Glass Morphism**: Apple-inspired frosted glass UI design
-- **Responsive Design**: Fully optimized for mobile and desktop
-- **Modern Animations**: Smooth transitions and floating elements
-- **Roboto Font**: Beautiful typography throughout
-- **Pink Theme**: Vibrant pink color scheme
+- 🎨 **Glass Morphism Design** - Apple-inspired frosted glass UI
+- 📱 **Fully Responsive** - Perfect on mobile and desktop
+- ✨ **Smooth Animations** - Elegant transitions and floating effects
+- 🖼️ **Photo Gallery** - Image slider with navigation
+- 💕 **Beautiful Typography** - Roboto font with gradient text effects
+- 🌸 **Modern Aesthetics** - White and pink color fusion
+
+## Quick Start
+
+### 1. Install Dependencies
+```bash
+npm install
+```
+
+### 2. Run Locally
+```bash
+npm start
+```
+Open http://localhost:4200 in your browser
+
+### 3. Deploy to Netlify
+**See [NETLIFY-DEPLOY.md](NETLIFY-DEPLOY.md) for deployment instructions**
+
+Quick option:
+- Push to GitHub
+- Connect repo to Netlify
+- Auto-deploys on every push!
 
 ## Project Structure
 
 ```
-chokie/
-├── src/
-│   ├── app/
-│   │   ├── pages/
-│   │   │   ├── landing/
-│   │   │   │   └── landing.component.ts
-│   │   │   ├── home/
-│   │   │   │   └── home.component.ts
-│   │   │   └── appreciation/
-│   │   │       └── appreciation.component.ts
-│   │   ├── app.component.ts
-│   │   └── app.routes.ts
-│   ├── assets/
-│   │   ├── chokie-main.jpg (landing page image)
-│   │   ├── chokie-1.jpg through chokie-5.jpg (gallery images)
-│   ├── index.html
-│   ├── main.ts
-│   └── styles.css
-├── package.json
-├── angular.json
-├── tsconfig.json
-└── README.md
+src/
+├── app/
+│   ├── pages/
+│   │   ├── landing/      # Loading animation & greeting
+│   │   ├── home/         # Friendship message
+│   │   └── appreciation/ # Photo gallery
+│   ├── app.routes.ts     # Navigation
+│   └── app.component.ts  # Root component
+├── assets/               # Images & resources
+├── index.html            # Main HTML
+├── main.ts              # Bootstrap
+└── styles.css           # Global styles
 ```
 
-## Setup Instructions
+## Development
 
-1. **Install Dependencies**:
-   ```bash
-   npm install
-   ```
+- **Build**: `npm run build`
+- **Test**: `npm test`
+- **Watch Build**: `npm run watch`
 
-2. **Add Images**:
+## Browser Support
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
    Create an `assets` folder in `src/` and add the following images:
    - `chokie-main.jpg` - Main image for landing page (recommended: 250x250px)
    - `chokie-1.jpg` through `chokie-5.jpg` - Gallery images (recommended: square aspect ratio)
